@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Alumno</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form> 
+        <div class="container">
+            <h2>Registro Alumno</h2>
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Ingresa tu matrícula" required>
+                <label for="matricula">Fecha de nacimiento:</label>
+                <input type="date" id="fechacumple" name="fechacumple" placeholder="Ingresa tu cumpleaños" required>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Selecciona tu carrera</option>
+                    <option value="informatica">Informatica</option>
+                    <option value="medicina">Medicina</option>
+                    <option value="enfermeria">Enfermeria</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="edad">Telefono:</label>
+                <input type="number" id="telefono" name="telefono" placeholder="Ingresa tu telefono" required>
+                <label for="gustos">¿Cuáles son tus gustos?</label>
+                <textarea id="gustos" name="gustos" placeholder="Escribe tus gustos aquí..." rows="4" required></textarea>
+                <label for="materias">Materias favoritas:</label>
+                <textarea id="materias" name="materias" placeholder="Escribe tus materias favoritas aquí..." rows="4" required></textarea>
+                <label>¿Te gusta tu carrera?</label>
+                <div>
+                    <input type="radio" id="carrera_si" name="gustar_carrera" value="si" required>
+                    <label for="carrera_si">Sí</label>
+                </div>
+                <div>
+                    <input type="radio" id="carrera_no" name="gustar_carrera" value="no">
+                    <label for="carrera_no">No</label>
+                </div>
+                <button type="submit">Registrar</button>
+        </div>
+    </form>
+</body>
+</html>
