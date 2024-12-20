@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculadora {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pantalla-calculadora {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.teclas-calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: #252525;
+}
+
+button {
+    height: 80px;
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+button.operador {
+    background-color: #f57c00;
+    color: white;
+}
+
+button.igual {
+    background-color: #039be5;
+    color: white;
+    grid-column: span 2;
+}
+
+button.reiniciar {
+    background-color: #d32f2f;
+    color: white;
+    grid-column: span 2;
+}
+
+button:active {
+    background-color: #dcdcdc;
+}
